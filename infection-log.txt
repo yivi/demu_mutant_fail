@@ -1,0 +1,115 @@
+Escaped mutants:
+================
+
+
+1) /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/src/FooZero.php:8    [M] DecrementInteger
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionB8yTsg  /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.2f63eeeb0971db715de6d7f1213cc9de.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+--- Original
++++ New
+@@ @@
+ {
+     public function zero(int $a) : bool
+     {
+-        return $a * 0;
++        return $a * -1;
+     }
+ }
+
+PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.2.4
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.2f63eeeb0971db715de6d7f1213cc9de.infection.xml
+
+.                                                                   1 / 1 (100%)
+
+Time: 21 ms, Memory: 4.00MB
+
+OK (1 test, 1 assertion)
+
+
+2) /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/src/FooZero.php:8    [M] OneZeroInteger
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionB8yTsg  /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.fda511dbfb061320c1c488174bd791eb.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+--- Original
++++ New
+@@ @@
+ {
+     public function zero(int $a) : bool
+     {
+-        return $a * 0;
++        return $a * 1;
+     }
+ }
+
+PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.2.4
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.fda511dbfb061320c1c488174bd791eb.infection.xml
+
+.                                                                   1 / 1 (100%)
+
+Time: 22 ms, Memory: 4.00MB
+
+OK (1 test, 1 assertion)
+
+
+3) /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/src/FooZero.php:8    [M] Multiplication
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionB8yTsg  /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.73011b3e6a78d9390e0abedfc9aebb8a.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+--- Original
++++ New
+@@ @@
+ {
+     public function zero(int $a) : bool
+     {
+-        return $a * 0;
++        return $a / 0;
+     }
+ }
+
+PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.2.4
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.73011b3e6a78d9390e0abedfc9aebb8a.infection.xml
+
+.                                                                   1 / 1 (100%)
+
+Time: 21 ms, Memory: 4.00MB
+
+OK (1 test, 1 assertion)
+
+
+4) /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/src/FooZero.php:5    [M] PublicVisibility
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionB8yTsg  /Users/ivan.yivoff-ext/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.82c6196c1716ee279f40d5b4557a1169.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+--- Original
++++ New
+@@ @@
+ 
+ class FooZero
+ {
+-    public function zero(int $a) : bool
++    protected function zero(int $a) : bool
+     {
+         return $a * 0;
+     }
+ }
+PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 7.2.4
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.82c6196c1716ee279f40d5b4557a1169.infection.xml
+
+.                                                                   1 / 1 (100%)
+
+Time: 21 ms, Memory: 4.00MB
+
+OK (1 test, 1 assertion)
+
+Timeout mutants:
+================
+
+Killed mutants:
+===============
+
+Errors mutants:
+===============
+
+Not covered mutants:
+====================
