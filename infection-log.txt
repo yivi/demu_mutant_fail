@@ -3,12 +3,12 @@ Escaped mutants:
 
 
 1) /Users/user/www_personal/demo_mutant_fail/src/FooZero.php:8    [M] DecrementInteger
-exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionT1hbO3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.2f63eeeb0971db715de6d7f1213cc9de.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionI4upR3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.15457aa30705ecdf657c596af6f32799.infection.xml --stop-on-failure --bootstrap=bootstrap.php
 --- Original
 +++ New
 @@ @@
  {
-     public function zero(int $a) : bool
+     public function zero(int $a) : int
      {
 -        return $a * 0;
 +        return $a * -1;
@@ -18,22 +18,22 @@ exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551
 PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.2.4
-Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.2f63eeeb0971db715de6d7f1213cc9de.infection.xml
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.15457aa30705ecdf657c596af6f32799.infection.xml
 
 .                                                                   1 / 1 (100%)
 
-Time: 21 ms, Memory: 4.00MB
+Time: 25 ms, Memory: 4.00MB
 
 OK (1 test, 1 assertion)
 
 
 2) /Users/user/www_personal/demo_mutant_fail/src/FooZero.php:8    [M] OneZeroInteger
-exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionT1hbO3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.fda511dbfb061320c1c488174bd791eb.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionI4upR3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.b6e2381ea8005d6e651350e6f2913f7d.infection.xml --stop-on-failure --bootstrap=bootstrap.php
 --- Original
 +++ New
 @@ @@
  {
-     public function zero(int $a) : bool
+     public function zero(int $a) : int
      {
 -        return $a * 0;
 +        return $a * 1;
@@ -43,7 +43,7 @@ exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551
 PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.2.4
-Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.fda511dbfb061320c1c488174bd791eb.infection.xml
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.b6e2381ea8005d6e651350e6f2913f7d.infection.xml
 
 .                                                                   1 / 1 (100%)
 
@@ -53,12 +53,12 @@ OK (1 test, 1 assertion)
 
 
 3) /Users/user/www_personal/demo_mutant_fail/src/FooZero.php:8    [M] Multiplication
-exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionT1hbO3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.73011b3e6a78d9390e0abedfc9aebb8a.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionI4upR3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.60c528ae4796f63ba12acf1e1544eeda.infection.xml --stop-on-failure --bootstrap=bootstrap.php
 --- Original
 +++ New
 @@ @@
  {
-     public function zero(int $a) : bool
+     public function zero(int $a) : int
      {
 -        return $a * 0;
 +        return $a / 0;
@@ -68,7 +68,7 @@ exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551
 PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.2.4
-Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.73011b3e6a78d9390e0abedfc9aebb8a.infection.xml
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.60c528ae4796f63ba12acf1e1544eeda.infection.xml
 
 .                                                                   1 / 1 (100%)
 
@@ -78,15 +78,15 @@ OK (1 test, 1 assertion)
 
 
 4) /Users/user/www_personal/demo_mutant_fail/src/FooZero.php:5    [M] PublicVisibility
-exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionT1hbO3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.82c6196c1716ee279f40d5b4557a1169.infection.xml --stop-on-failure --bootstrap=bootstrap.php
+exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infectionI4upR3  /Users/user/www_personal/demo_mutant_fail/vendor/phpunit/phpunit/phpunit --configuration /var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.7d8f63aab87b536cc0a99bc907c4e987.infection.xml --stop-on-failure --bootstrap=bootstrap.php
 --- Original
 +++ New
 @@ @@
  
  class FooZero
  {
--    public function zero(int $a) : bool
-+    protected function zero(int $a) : bool
+-    public function zero(int $a) : int
++    protected function zero(int $a) : int
      {
          return $a * 0;
      }
@@ -94,7 +94,7 @@ exec /usr/local/Cellar/php/7.2.4_1/bin/php -c /private/var/folders/vm/4njclq0551
 PHPUnit 7.1.4 by Sebastian Bergmann and contributors.
 
 Runtime:       PHP 7.2.4
-Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.82c6196c1716ee279f40d5b4557a1169.infection.xml
+Configuration: /private/var/folders/vm/4njclq0551gfx1q36d_syk7sfhkp5k/T/infection/phpunitConfiguration.7d8f63aab87b536cc0a99bc907c4e987.infection.xml
 
 .                                                                   1 / 1 (100%)
 

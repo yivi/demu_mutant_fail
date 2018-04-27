@@ -2,7 +2,7 @@
 
 class FooZero
 {
-    public function zero(int $a): bool
+    public function zero(int $a): int
 
     {
         return $a * 0;
