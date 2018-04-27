@@ -8,4 +8,11 @@
     <testsuite name="footest">
         <directory>tests</directory>
     </testsuite>
+
+    <filter>
+        <whitelist>
+            <directory>./src/</directory>
+        </whitelist>
+    </filter>
+
 </phpunit>
